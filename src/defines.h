@@ -21,13 +21,16 @@
 #define DEFAULT_OUT_FILE "/var/run/rtl_entropy.fifo"
 
 #define MHZ(x)	((x)*1000*1000)
-#define DEFAULT_SAMPLE_RATE		3200000
+/* #define DEFAULT_SAMPLE_RATE		3200000 */
+#define DEFAULT_SAMPLE_RATE		2400000
 #define DEFAULT_ASYNC_BUF_NUMBER	32
 #define DEFAULT_BUF_LENGTH		(16 * 16384)
 #define MINIMAL_BUF_LENGTH		512
-#define MAXIMAL_BUF_LENGTH		(256 * 16384)
+/* #define MAXIMAL_BUF_LENGTH		(256 * 16384) */
+#define MAXIMAL_BUF_LENGTH		(128 * 16384)
 #define BUFFER_SIZE                     2500 /* need 2500 bits for FIPS */
-#define DEFAULT_FREQUENCY MHZ(70)
+/* #define DEFAULT_FREQUENCY MHZ(70) */
+#define DEFAULT_FREQUENCY MHZ(55)
 #define HASH_BUFFER_SIZE  64 /* Bytes */
 
 #define GFLAGS_DETACH 0
