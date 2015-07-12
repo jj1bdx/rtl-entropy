@@ -341,7 +341,9 @@ int main(int argc, char **argv) {
       break;
     }
     if ((uint32_t)n_read < out_block_size) {
-      log_line(LOG_DEBUG, "ERROR: Short read, samples lost, exiting!");
+      log_line(LOG_DEBUG,
+              "ERROR: Short read, samples lost, n_read = %d, exiting!",
+               n_read);
       break;
     }
     
